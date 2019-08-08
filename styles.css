@@ -1,0 +1,105 @@
+body {
+	background-color: yellow;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Aguafina Script';
+	font-size: 60px;
+}
+
+#game-card {
+    margin: auto;
+    width: 600px;
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 0px;
+}
+
+#main {
+	display: grid;
+	grid-template-columns: 15% 1fr;
+}
+
+#vamonos {
+	background-color: #008CBA;
+	font-family: 'Aguafina Script';
+	font-size: 25px;
+	padding: 10px 24px;
+	border-radius: 4px;
+	color: #4CAF50;
+	transition-duration: 0.4s;
+}
+
+#vamonos:hover {
+	background-color: green;
+	color: #008CBA;
+}
+
+#buenas{
+	background-color: #008CBA;
+	font-family: 'Aguafina Script';
+	font-size: 25px;
+	padding: 10px 24px;
+	border-radius: 4px;
+	color: #4CAF50;
+	visibility: hidden;
+	transition-duration: 0.4s;
+}
+
+#buenas:hover{
+	background-color: green;
+	color: #008CBA;
+}
+
+#start-over{
+	background-color: #008CBA;
+	font-family: 'Aguafina Script';
+	font-size: 25px;
+	padding: 10px 24px;
+	border-radius: 4px;
+	color: #4CAF50;
+	visibility: hidden;
+	transition-duration: 0.4s;
+}
+
+#start-over: hover{
+	background-color: green;
+	color: #008CBA;
+}
+
+#deck {
+	min-height: 50px;
+}
+
+#message{
+	background-color: orange;
+	font-family: 'Alegreya SC';
+	text-align: center;
+	border-style: solid;
+	border-color: pink;
+
+}
+
+#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12,
+#p13, #p14, #p15, #p16 {
+	position: relative;
+	z-index: 1;
+	max-width: 40px;
+	max-height: 30px;
+	padding: 80px 15px 25px 35px;
+	visibility: hidden;
+}
+
+#card-image {
+	max-width: 200px;
+	max-height: 200px;
+	position: relative;
+}
+
+img {
+	max-width: 200px;
+	max-height: 200px;
+	position: absolute;
+}
