@@ -52,6 +52,7 @@ function drawCard(){
 document.getElementById("vamonos").addEventListener("click", function(){
 	// Change the start button to display "start over"
 	document.getElementById("vamonos").style.visibility = "hidden";
+	document.getElementById("message").style.visibility = "hidden";
 
 	// Display "Start Over" button
 	document.getElementById("start-over").style.visibility = "visible";
@@ -76,9 +77,7 @@ document.getElementById("vamonos").addEventListener("click", function(){
 	console.log(shuffledDeck);
 
 	// Here we tell the drawCard function to draw a card every three seconds
-	//if (interval !== true){
 	interval = setInterval(drawCard, 2000);
-	//};
 
 	// Display and draw cards by calling on the drawCard function
 	drawCard();
@@ -109,6 +108,7 @@ function endGame(){
 }
 
 function checkingWin(){
+	document.getElementById("message").style.visibility = "visible";
 	if(beanCount < 16 && shuffledDeck == 0){
 		document.getElementById("message").innerText = "TIME RAN OUT. YOU WERE TOO SLOW.";
 		return;
